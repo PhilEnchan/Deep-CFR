@@ -152,3 +152,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [1] Brown, Noam, et al. "Deep Counterfactual Regret Minimization." arXiv preprint arXiv:1811.00164 (2018).
 
 [2] Steinberger, Eric. "Single Deep Counterfactual Regret Minimization." arXiv preprint arXiv:1901.07621 (2019).
+
+ray==0.8.4
+ray start --head --num-cpus=$(nproc) --num-gpus=$(nvidia-smi --list-gpus | wc -l) --object-store-memory=10000000000 --memory=10000000000
